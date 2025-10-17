@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Memórias Mais Doces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">♥ 4 Anos de Nós</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Nossa História</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="memorias.html">Memórias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="desculpas.html">Uma Mensagem Importante</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center py-5">
+        <h1 class="hero-title">Memórias Que Guardamos</h1>
+        <p class="lead text-muted">Cada foto, um pedacinho da nossa jornada.</p>
+    </div>
+
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-photo">
+                    <img src="img/PedidoSogra.png" class="card-img-top" alt="Foto"
+                         data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="mudarImagem(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">O dia da Permissão dos meus sogros</h5>
+                        <p class="card-text"><small class="text-muted">Outubro, 2021</small><br>O dia em que eu pedi você em namoro pra sua vó e pro seu vô.</p>
+                        <p>Lembro como se fosse ontem eu andando aquele clube do exército todo conversando com a Dona Liane perguntando pra ela se ela estaria tranquila caso eu viesse a ser seu namorado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-photo">
+                    <img src="img/Natal.png" class="card-img-top" alt="Foto natal"
+                         data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="mudarImagem(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">Nosso primeiro Natal</h5>
+                        <p class="card-text"><small class="text-muted">Dezembro, 2021</small><br>Esse foi nosso primeiro Natal juntos, lembro que ganhei um presente do seu vô.</p>
+                        <p>Foi ali que eu comecei a me sentir parte da sua família, e de fato, a ficha começou a cair que eu comecei a comemorar datas como natal, ano novo e meu aniversário, tudo isso com a pessoa que eu amo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-photo">
+                    <img src="img/RavieAgatha.png" class="card-img-top" alt="Foto ravi/agatha"
+                         data-bs-toggle="modal" data-bs-target="#modalImagem" onclick="mudarImagem(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">A mulher que eu amo.</h5>
+                        <p class="card-text"><small class="text-muted">Nem lembro a data mas amo essa foto</small><br>Eu não lembro a data dessa foto mas sempre que eu vejo ela me dá uma felicidade imensa.</p>
+                        <p>Ver você segurando o Ravi nessa foto faz meu coração ficar quente e me faz pensar que eu quero que você seja a mãe dos meus filhos. Obrigado por ser essa pessoa maravilhosa, e por me mostrar o quanto eu precisava de você. Eu te amo demais.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImagem" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content bg-dark border-0">
+          <div class="modal-body p-0 text-center">
+            <img id="imagemModalBootstrap" src="" class="img-fluid rounded" alt="Imagem ampliada">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2025 Nosso Amor. Criado com todo o carinho do mundo.</p>
+    </footer>
+
+    <script>
+      function mudarImagem(img) {
+        document.getElementById('imagemModalBootstrap').src = img.src;
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
